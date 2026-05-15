@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@100mslive/react-sdk": "^0.12.1",
+    "@supabase/supabase-js": "^2.105.4",
     "@tanstack/react-router": "^1.169.2",
     "clsx": "^2.1.1",
     "groq-sdk": "^1.2.0",

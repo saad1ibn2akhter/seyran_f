@@ -4,6 +4,8 @@ import IndexPage from './routes/index'
 import HelloPage from './routes/hello'
 import Chat from './routes/chat'
 import Video from './routes/video'
+import LoginPage from './pages/LoginPage'
+import RegisterPage from './pages/RegisterPage'
 
 const rootRoute = createRootRoute({
   component: App,
@@ -31,8 +33,18 @@ const videoRoute = createRoute({
   path: '/v',
   component:Video,
 })
-// const routeTree = rootRoute.addChildren([indexRoute , helloRoute ])
-const routeTree = rootRoute.addChildren([indexRoute , helloRoute , chatRoute, videoRoute])
+const loginRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/login',
+  component:LoginPage,
+})
+const registerRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/register',
+  component:RegisterPage,
+})
+
+const routeTree = rootRoute.addChildren([indexRoute , helloRoute , chatRoute, videoRoute ,loginRoute ,registerRoute])
 
 export const router = createRouter({ routeTree })
 

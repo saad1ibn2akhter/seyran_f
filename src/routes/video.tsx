@@ -11,6 +11,7 @@ import {
   useHMSStore,
   selectIsConnectedToRoom,
 } from "@100mslive/react-sdk";
+
 import { useState } from "react";
 
 // you just need to get a token-endpoint from 100ms's dashboard 
@@ -41,6 +42,7 @@ function JoinScreen() {
     } catch (err) {
     // dont forget to check the inspect->console for potential issues 
       console.error("Join failed:", err);
+      //this function doesn't work if the endpoint is invalid
     }
   };
 

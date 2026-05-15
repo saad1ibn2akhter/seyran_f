@@ -609,6 +609,7 @@ function ChatThread({
             ref={scrollRef}
             className="flex-1 overflow-y-auto bg-stone-50"
         >
+
             <div className="mx-auto max-w-3xl px-4 py-6">
                 <div className="space-y-6">
                     {conv.messages.map((m, i) => (
@@ -671,6 +672,7 @@ function MessageBubble({
                     <div
                         className="
                             prose prose-stone
+
                             max-w-none
                             prose-pre:overflow-x-auto
                             prose-pre:rounded-2xl
