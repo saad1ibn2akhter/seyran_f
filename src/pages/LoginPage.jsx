@@ -12,6 +12,8 @@ export default function LoginPage() {
     const [form, setForm] = useState(INITIAL_FORM);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [u,setu] = useState(null);
+
 
     const handleChange = (e) => {
         setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -31,8 +33,12 @@ export default function LoginPage() {
             return;
         }
 
-        window.location.href = "/";
+        // window.location.href = "/";
+        setu(supabase.auth.getUser().user);
+        console.log("USER DATA : ", u);
+
     };
+    console.log("USER DATA : ", u);
 
     return (
         <AuthLayout

@@ -7,6 +7,8 @@ import Video from './routes/video'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import SignOutComponent from './pages/SignOutComponent'
+import Home from './components/landing/home'
+import App2 from './components/landing/Hero'
 
 const rootRoute = createRootRoute({
   component: App,
@@ -15,7 +17,7 @@ const rootRoute = createRootRoute({
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: '/',
-  component: IndexPage,
+  component: Home,
 })
 
 const helloRoute = createRoute({
@@ -50,6 +52,7 @@ const signOutRoute = createRoute({
   path:'/signout',
   component:SignOutComponent,
 })
+
 
 const routeTree = rootRoute.addChildren([indexRoute , helloRoute , chatRoute, videoRoute ,loginRoute ,registerRoute,signOutRoute])
 
