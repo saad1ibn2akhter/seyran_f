@@ -2,7 +2,6 @@
 
 This is a [Next.js](https://nextjs.org) project .
 
-## Built with v0
 
  You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
 
