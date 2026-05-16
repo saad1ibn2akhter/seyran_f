@@ -1,10 +1,12 @@
+import { Hero } from "./Hero";
 import { Logo } from "./Logo";
 import { Navbar } from "./Navbar";
 
 export default function Home(){
     return (
-        <div className="container mx-auto max-w-6xl ">
+        <div className=" mx-auto ">
             <Navbar></Navbar>
+            <Hero></Hero>
         </div>
     );
 }
