@@ -16,6 +16,7 @@ export async function signIn({ email, password }) {
 /**
  * Register a new user and create their profile row.
  * Returns { error } — null on success.
+ * alright everything makes sense now , 
  */
 export async function signUp({ email, password, name, school, yearGroup }) {
     const { data, error } = await supabase.auth.signUp({ email, password });
@@ -38,4 +39,11 @@ export async function signUp({ email, password, name, school, yearGroup }) {
     }
 
     return { error: null };
+}
+
+export async function signOut()
+
+{
+    const {error} = await supabase.auth.signOut();
+    return {error};
 }

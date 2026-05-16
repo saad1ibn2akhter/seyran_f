@@ -71,7 +71,9 @@ async function sendToModel(
     onToken: (text: string) => void,
     signal: AbortSignal
 ): Promise<string> {
-    const apiKey = "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";
+
+    const apiKey = import.meta.env.GROQ_API!;
+
 
     const client = new Groq({
         apiKey,
