@@ -80,7 +80,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative overflow-hidden pt-8 sm:pt-12">
+    <section className="relative overflow-hidden pt-8 sm:pt-12 font-monts">
       {/* gradient orbs — now emerald/green tinted */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[var(--gradient-hero)]" />
@@ -148,7 +148,7 @@ export function Hero() {
         </h1>
 
         {/* Sub */}
-        <p className="text-balance mx-auto mt-5 max-w-xl px-2 text-base text-muted-foreground sm:mt-6 sm:text-lg">
+        <p className="text-balance mx-auto mt-5 max-w-xl px-2 text-base text-muted-foreground sm:mt-6 sm:text-lg font-monts">
           Spec-mapped notes that go deeper than BBC Bitesize, 9,000+ exam
           questions, a fine-tuned AI tutor, every past paper and a full exam
           simulator. Teachers can set and auto-mark homework too.

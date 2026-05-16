@@ -340,7 +340,7 @@ export default function Chat() {
     );
 
     return (
-        <div className="flex h-screen w-screen overflow-hidden bg-stone-50 font-mono">
+        <div className="flex h-screen w-screen overflow-hidden bg-stone-50  font-[var(--font-monts)]">
             {/* sidebar */}
 
             <aside

@@ -1,8 +1,11 @@
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 :root {
   --background: 0 0% 100%;
   --foreground: 0 0% 3.9%;
+  --font-monts: "Montserrat", sans-serif;
+  --font-right: "Righteous", sans-serif;
 }
 
 .dark {
@@ -23,7 +26,9 @@ body {
   min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
 }
+
 
 /* Safe area padding for notched devices */
 .safe-top {

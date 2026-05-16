@@ -1,6 +1,6 @@
 import { createRouter, createRootRoute, createRoute } from '@tanstack/react-router'
 import App from './App'
-import IndexPage from './routes/index'
+// import IndexPage from './routes/index'
 import HelloPage from './routes/hello'
 import Chat from './routes/chat'
 import Video from './routes/video'
@@ -8,7 +8,10 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 import SignOutComponent from './pages/SignOutComponent'
 import Home from './components/landing/home'
-import App2 from './components/landing/Hero'
+import ExamSimulator from './components/exam/ExamSimulator'
+// import App2 from './components/landing/Hero'
+//changed those 3 files into .tsx from .jsx
+//didnt solve a shit :(
 
 const rootRoute = createRootRoute({
   component: App,
@@ -53,8 +56,17 @@ const signOutRoute = createRoute({
   component:SignOutComponent,
 })
 
+const examRoute = createRoute({
+  getParentRoute : () => rootRoute,
+  path:'/exam',
+  component:ExamSimulator,
+})
 
-const routeTree = rootRoute.addChildren([indexRoute , helloRoute , chatRoute, videoRoute ,loginRoute ,registerRoute,signOutRoute])
+
+const routeTree = rootRoute.addChildren([indexRoute , helloRoute , chatRoute, 
+  videoRoute ,loginRoute ,registerRoute,signOutRoute , examRoute
+
+])
 
 export const router = createRouter({ routeTree })
 

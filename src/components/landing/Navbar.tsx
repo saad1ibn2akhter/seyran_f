@@ -519,7 +519,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-3 z-50 w-full px-3 sm:top-4 sm:px-4">
+    <header className="font-right sticky top-3 z-50 w-full px-3 sm:top-4 sm:px-4">
       <div className="relative mx-auto max-w-6xl" onMouseLeave={scheduleCloseDesktop}>
         {/* Pill bar — taller on desktop to accommodate the logo */}
         <div className="flex h-14 items-center justify-between rounded-full border border-stone-200/70 bg-white/80 pl-3 pr-1.5 shadow-[0_4px_28px_-8px_rgba(15,23,42,0.08)] backdrop-blur-xl sm:h-16 sm:pl-4 sm:pr-2 md:h-[4.5rem] md:pl-5 md:pr-2.5">
